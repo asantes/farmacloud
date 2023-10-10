@@ -1,0 +1,90 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			xmlns:g="urn:import:com.google.gwt.user.client.ui"
+			xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+			xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
+			xmlns:b.base="urn:import:org.gwtbootstrap3.client.ui.base.mixin">
+	
+	<ui:style src="MenuPharmaViewImp.css">
+	</ui:style>
+	
+	<b:Container fluid="true">
+	    
+	  <b:NavbarHeader>
+	    <b:NavbarBrand>Farmacloud</b:NavbarBrand>
+	    <b:NavbarCollapseButton dataTarget="#navbar-collapse"/>
+	  </b:NavbarHeader>
+	
+	  <b:NavbarCollapse b:id="navbar-collapse">
+	      
+	    <b:NavbarNav>
+	        
+	      <b:AnchorListItem active="true">Home</b:AnchorListItem>
+	      
+	      <b:ListDropDown>
+	        <b:AnchorButton dataToggle="DROPDOWN">Ventas</b:AnchorButton>
+	        <b:DropDownMenu>
+	          <b:AnchorListItem>Ventas 1</b:AnchorListItem>
+	          <b:AnchorListItem>Ventas 2</b:AnchorListItem>
+	          <b:AnchorListItem>Ventas 3</b:AnchorListItem>
+	        </b:DropDownMenu>
+	      </b:ListDropDown>
+	      
+	     <b:ListDropDown>
+	        <b:AnchorButton dataToggle="DROPDOWN">Proveedores</b:AnchorButton>
+	        <b:DropDownMenu>
+	          <b:AnchorListItem href="#ver-proveedores/">Ver proveedores</b:AnchorListItem>
+	          <b:AnchorListItem href="#añadir-proveedor/">Añadir proveedor</b:AnchorListItem>
+	        </b:DropDownMenu>
+	      </b:ListDropDown>
+	      
+	     <b:ListDropDown>
+	        <b:AnchorButton dataToggle="DROPDOWN">Medicamentos</b:AnchorButton>
+	        <b:DropDownMenu>
+	          <b:AnchorListItem href="#medicamentos/">Catalogo</b:AnchorListItem>
+	          <b:AnchorListItem>Medicamentos 2</b:AnchorListItem>
+	          <b:AnchorListItem>Medicamentos 3</b:AnchorListItem>
+	        </b:DropDownMenu>
+	      </b:ListDropDown>
+	      
+	      <b:AnchorListItem href="#simulacion/">Simulacion</b:AnchorListItem>
+	      
+	     <b:ListDropDown>
+	        <b:AnchorButton dataToggle="DROPDOWN">Noticias</b:AnchorButton>
+	        <b:DropDownMenu>
+	          <b:AnchorListItem href="#escribir-noticia/">Añadir noticia</b:AnchorListItem>
+	          <b:AnchorListItem>Ver noticias</b:AnchorListItem>
+	          <b:AnchorListItem>Noticias 3</b:AnchorListItem>
+	        </b:DropDownMenu>
+	      </b:ListDropDown>
+	      
+	     <b:ListDropDown>
+	        <b:AnchorButton dataToggle="DROPDOWN">Usuarios</b:AnchorButton>
+	        <b:DropDownMenu>
+	          <b:AnchorListItem href="#registro-pharma/">Registrar usuario</b:AnchorListItem>
+	          <b:AnchorListItem>Ver usuarios</b:AnchorListItem>
+	          <b:AnchorListItem>Usuarios 3</b:AnchorListItem>
+	        </b:DropDownMenu>
+	      </b:ListDropDown>
+	
+	    </b:NavbarNav>
+	
+	    <b:NavbarForm pull="LEFT">
+	      <b:TextBox placeholder="Search" addStyleNames="col-lg-8"/>
+	    </b:NavbarForm>
+			
+	    <b:NavbarText >
+	        <b:NavbarLink>Menu</b:NavbarLink>
+	    </b:NavbarText>
+	        
+	    <b:NavbarNav pull="RIGHT">
+	        <b:NavbarButton ui:field="logout" addStyleNames='{style.logout}' icon="SIGN_OUT" iconPosition="RIGHT">Logout</b:NavbarButton>
+	    </b:NavbarNav>
+	    
+	  </b:NavbarCollapse>
+	</b:Container>
+		
+</ui:UiBinder> 
+
+

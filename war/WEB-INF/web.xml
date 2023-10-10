@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <sessions-enabled>true</sessions-enabled>
+
+	<!-- Apache Shiro -->
+	
+	<filter>
+		<filter-name>guiceFilter</filter-name>
+   		<filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+	</filter>
+ 
+	<filter-mapping>
+		<filter-name>guiceFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+
+	</filter-mapping>
+	<filter>
+		<filter-name>shiroFilter</filter-name>
+    	<filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
+	</filter>
+	<!-- Make sure any request you want accessible to Shiro is filtered. /* catches all -->
+	<!-- requests. Usually this filter mapping is defined first (before all others) to -->
+	<!-- ensure that Shiro works in subsequent filters in the filter chain: -->
+	<filter-mapping>
+    	<filter-name>shiroFilter</filter-name>
+    	<url-pattern>/*</url-pattern>
+    	<dispatcher>REQUEST</dispatcher>
+    	<dispatcher>FORWARD</dispatcher>
+    	<dispatcher>INCLUDE</dispatcher>
+    	<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+	
+	<listener>
+    	<listener-class>com.farmacloud.server.shiro.guice.MyGuiceServletConfig</listener-class>
+	</listener> 
+	
+	<!-- Apache Shiro End-->
+	
+  <!-- Servlets -->
+  
+  <context-param>
+	<param-name>gwt.xsrf.session_cookie_name</param-name>
+	<param-value>JSESSIONID</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>xsrf</servlet-name>
+	<servlet-class>com.google.gwt.user.server.rpc.XsrfTokenServiceServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>xsrf</servlet-name>
+	<url-pattern>/farmacloud/xsrf</url-pattern>
+  </servlet-mapping>
+  
+  <!--	G E S T I O N	M E D I C A M E N T O S	
+  <servlet>
+    <servlet-name>gestionMedicamentoServlet</servlet-name>
+    <servlet-class>com.farmacloud.server.services.ImpServicioGestionMedicamento</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+    <servlet-name>gestionMedicamentoServlet</servlet-name>
+    <url-pattern>/farmacloud/gestionmedicamento</url-pattern>
+  </servlet-mapping> -->
+  
+  <!--	G E S T I O N	U S U A R I O S 
+  <servlet>
+    <servlet-name>gestionUsuarioServlet</servlet-name>
+    <servlet-class>com.farmacloud.server.services.ImpServicioUsuario</servlet-class>
+  </servlet>
+  
+      
+  <servlet-mapping>
+    <servlet-name>gestionUsuarioServlet</servlet-name>
+    <url-pattern>/farmacloud/gestionusuario</url-pattern>
+  </servlet-mapping>  	-->
+  
+  	
+  
+   <!--	G E S T I O N	P R O V E E D O R	
+   <servlet>
+    <servlet-name>gestionProveedorServlet</servlet-name>
+    <servlet-class>com.farmacloud.server.services.ImpServicioGestionProveedor</servlet-class>
+   </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>gestionProveedorServlet</servlet-name>
+    <url-pattern>/farmacloud/gestionproveedor</url-pattern>
+  </servlet-mapping> -->
+  
+     <!--	G E S T I O N	P E D I D O S	-->
+   <servlet>
+    <servlet-name>gestionPedidoServlet</servlet-name>
+    <servlet-class>com.farmacloud.server.services.ImpServicioGestionPedido</servlet-class>
+   </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>gestionPedidoServlet</servlet-name>
+    <url-pattern>/farmacloud/gestionpedido</url-pattern>
+  </servlet-mapping>
+  
+   <!--		G E S T I O N	V E N T A	-->
+   <servlet>
+    <servlet-name>gestionVentaServlet</servlet-name>
+    <servlet-class>com.farmacloud.server.services.ImpServicioGestionVenta</servlet-class>
+   </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>gestionVentaServlet</servlet-name>
+    <url-pattern>/farmacloud/gestionventa</url-pattern>
+  </servlet-mapping>
+  
+   <!--		G E S T I O N	S I M U L A C I O N	-->
+   <servlet>
+    <servlet-name>simulacionServlet</servlet-name>
+    <servlet-class>com.farmacloud.server.services.ImpServicioSimulacion</servlet-class>
+   </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>simulacionServlet</servlet-name>
+    <url-pattern>/farmacloud/simulacion</url-pattern>
+  </servlet-mapping>
+ 
+   <!--		G E S T I O N	F A R M A C I A	
+   <servlet>
+    <servlet-name>gestionFarmaciaServlet</servlet-name>
+    <servlet-class>com.farmacloud.server.services.ImpServicioGestionFarmacia</servlet-class>
+   </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>gestionFarmaciaServlet</servlet-name>
+    <url-pattern>/farmacloud/gestionfarmacia</url-pattern>
+  </servlet-mapping> -->
+ 
+  <!-- DIOS -->
+  <listener>
+      <listener-class>com.farmacloud.server.utiles.ContextListener</listener-class>
+  </listener>
+  
+   <!--	H T T P   U P L O A D
+  <servlet>
+    <servlet-name>fileUploaderServlet</servlet-name>
+    <servlet-class>com.farmacloud.server.services.FileUpload</servlet-class>
+  </servlet>
+
+   <servlet-mapping>
+	<servlet-name>fileUploaderServlet</servlet-name>
+	  <url-pattern>/farmacloud/fileupload</url-pattern>
+   </servlet-mapping> -->
+   
+ 
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>FarmaCloud.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

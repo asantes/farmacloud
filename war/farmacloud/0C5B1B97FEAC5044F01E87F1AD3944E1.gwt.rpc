@@ -1,0 +1,43 @@
+com.farmacloud.client.services.ServicioUsuario, false, false, false, false, _, 2277227666
+com.farmacloud.shared.MyServerViolationException, true, true, false, false, com.farmacloud.shared.MyServerViolationException/2963117895, 2963117895
+com.farmacloud.shared.model.DTO.UserRoleDTO, true, true, false, false, com.farmacloud.shared.model.DTO.UserRoleDTO/2403786877, 2403786877
+com.farmacloud.shared.model.SesionUsuarioRecordar, true, true, true, true, com.farmacloud.shared.model.SesionUsuarioRecordar/3102861387, 3102861387
+[Lcom.farmacloud.shared.model.SesionUsuarioRecordar;, true, true, true, true, [Lcom.farmacloud.shared.model.SesionUsuarioRecordar;/988740128, 988740128
+com.farmacloud.shared.model.SesionUsuarioTemporal, true, true, true, true, com.farmacloud.shared.model.SesionUsuarioTemporal/1133021285, 1133021285
+@ClientFields,com.farmacloud.shared.model.SesionUsuarioTemporal
+com.farmacloud.shared.model.Usuario, true, true, true, true, com.farmacloud.shared.model.Usuario/2758418502, 2758418502
+@ClientFields,com.farmacloud.shared.model.Usuario
+com.farmacloud.shared.model.UsuarioPharma, true, true, true, true, com.farmacloud.shared.model.UsuarioPharma/657253737, 657253737
+com.farmacloud.shared.model.abstracts.SesionUsuarioAbstracta, true, false, true, false, com.farmacloud.shared.model.abstracts.SesionUsuarioAbstracta/1504949013, 1504949013
+@ClientFields,com.farmacloud.shared.model.abstracts.SesionUsuarioAbstracta,encodedKey,parentEncodedKey,fechaCreacion,idSession
+com.farmacloud.shared.model.abstracts.UsuarioAbstracto, true, false, true, false, com.farmacloud.shared.model.abstracts.UsuarioAbstracto/4271559680, 4271559680
+@ClientFields,com.farmacloud.shared.model.abstracts.UsuarioAbstracto,nameUser,password,salt,nombre,apellido,mail,roles,sesionTemporal,sesionRecordar,sesionValida,uuid
+com.farmacloud.shared.validation.Credenciales, false, false, true, true, com.farmacloud.shared.validation.Credenciales/1053053989, 1053053989
+com.google.gwt.i18n.shared.impl.DateRecord, true, true, true, true, com.google.gwt.i18n.shared.impl.DateRecord/3375188634, 3375188634
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true, true, true, true, com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException/3936916533, 3936916533
+com.google.gwt.user.client.rpc.RpcTokenException, true, true, false, false, com.google.gwt.user.client.rpc.RpcTokenException/2345075298, 2345075298
+com.google.gwt.user.client.rpc.XsrfToken, false, false, true, true, com.google.gwt.user.client.rpc.XsrfToken/4254043109, 4254043109
+java.lang.Boolean, true, true, true, true, java.lang.Boolean/476441737, 476441737
+java.lang.Exception, true, false, true, false, java.lang.Exception/1920171873, 1920171873
+java.lang.RuntimeException, true, false, true, false, java.lang.RuntimeException/515124647, 515124647
+java.lang.String, true, true, true, true, java.lang.String/2004016611, 2004016611
+java.lang.Throwable, true, false, true, false, java.lang.Throwable/2953622131, 2953622131
+java.sql.Date, true, true, true, true, java.sql.Date/730999118, 730999118
+java.sql.Time, true, true, true, true, java.sql.Time/1816797103, 1816797103
+java.sql.Timestamp, true, true, true, true, java.sql.Timestamp/3040052672, 3040052672
+java.util.ArrayList, true, true, true, true, java.util.ArrayList/4159755760, 4159755760
+java.util.Arrays$ArrayList, true, true, true, true, java.util.Arrays$ArrayList/2507071751, 2507071751
+java.util.Collections$EmptyList, true, true, true, true, java.util.Collections$EmptyList/4157118744, 4157118744
+java.util.Collections$EmptySet, true, true, true, true, java.util.Collections$EmptySet/3523698179, 3523698179
+java.util.Collections$SingletonList, true, true, true, true, java.util.Collections$SingletonList/1586180994, 1586180994
+java.util.Date, true, true, true, true, java.util.Date/3385151746, 3385151746
+java.util.HashSet, true, true, true, true, java.util.HashSet/3273092938, 3273092938
+java.util.LinkedHashSet, true, true, true, true, java.util.LinkedHashSet/1826081506, 1826081506
+java.util.LinkedList, true, true, true, true, java.util.LinkedList/3953877921, 3953877921
+java.util.Stack, true, true, true, true, java.util.Stack/1346942793, 1346942793
+java.util.TreeMap, true, true, true, true, java.util.TreeMap/1493889780, 1493889780
+java.util.TreeSet, true, true, true, true, java.util.TreeSet/4043497002, 4043497002
+java.util.Vector, true, true, true, true, java.util.Vector/3057315478, 3057315478
+javax.validation.ConstraintViolationException, true, true, false, false, javax.validation.ConstraintViolationException/1185386591, 1185386591
+javax.validation.ValidationException, true, false, false, false, javax.validation.ValidationException/1570221831, 1570221831
+org.hibernate.validator.engine.ConstraintViolationImpl, true, true, false, false, org.hibernate.validator.engine.ConstraintViolationImpl/3211764663, 3211764663

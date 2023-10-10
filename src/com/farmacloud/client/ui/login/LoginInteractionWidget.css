@@ -1,0 +1,14 @@
+
+
+	.textRight{
+		text-align: right;
+	}
+	
+	.textBitSmaller{
+		font-size: 0.95em;
+	}
+	
+	#login{
+		margin-top: 1.5em;
+		margin-bottom: 1em;
+	}

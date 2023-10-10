@@ -1,0 +1,2 @@
+serviceClass: com.farmacloud.client.services.ServicioSimulacion
+path: DA7979D7FE05D7323C9B858EB63ED17E.gwt.rpc

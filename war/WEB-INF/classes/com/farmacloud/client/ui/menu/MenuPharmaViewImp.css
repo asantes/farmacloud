@@ -1,0 +1,15 @@
+
+	.logout{
+		background: none;
+		border-style: none;
+		border: none;
+		color:#a6a6a6;
+		font-weight: bold;
+	}
+	
+	.logout:hover, .logout:active{
+		background: none;
+		border: none;
+		color:white;
+		font-weight: bold;
+	}

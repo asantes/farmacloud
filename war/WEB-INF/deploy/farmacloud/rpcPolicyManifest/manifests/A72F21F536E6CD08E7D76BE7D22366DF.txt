@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.user.client.rpc.XsrfProtectedService
+path: 0E131BE364E84F12D67591D5FFBF8749.gwt.rpc

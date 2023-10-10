@@ -1,0 +1,46 @@
+com.farmacloud.client.services.ServicioGestionProveedor, false, false, false, false, _, 4240743095
+com.farmacloud.shared.model.CatalogoMedicamentos, true, true, true, true, com.farmacloud.shared.model.CatalogoMedicamentos/2297964518, 2297964518
+@ClientFields,com.farmacloud.shared.model.CatalogoMedicamentos,encodedKey,keyName,parentNegocioKey,fecha,numMedicamentos,listaMedicamentos
+com.farmacloud.shared.model.Medicamento, true, true, true, true, com.farmacloud.shared.model.Medicamento/4194052251, 4194052251
+@ClientFields,com.farmacloud.shared.model.Medicamento
+com.farmacloud.shared.model.MedicamentoProveedor, true, true, true, true, com.farmacloud.shared.model.MedicamentoProveedor/3910271279, 3910271279
+@ClientFields,com.farmacloud.shared.model.MedicamentoProveedor
+[Lcom.farmacloud.shared.model.MedicamentoProveedor;, true, true, true, true, [Lcom.farmacloud.shared.model.MedicamentoProveedor;/820792874, 820792874
+[Lcom.farmacloud.shared.model.Medicamento;, true, true, true, true, [Lcom.farmacloud.shared.model.Medicamento;/3823080165, 3823080165
+com.farmacloud.shared.model.Proveedor, true, true, true, true, com.farmacloud.shared.model.Proveedor/3742935541, 3742935541
+[Lcom.farmacloud.shared.model.Proveedor;, true, true, false, false, [Lcom.farmacloud.shared.model.Proveedor;/797437918, 797437918
+com.farmacloud.shared.model.abstracts.MedicamentoAbstracto, true, true, true, true, com.farmacloud.shared.model.abstracts.MedicamentoAbstracto/665039814, 665039814
+@ClientFields,com.farmacloud.shared.model.abstracts.MedicamentoAbstracto,encodedKey,codigoNacional,parentKey,nombre,laboratorio,principioActivo,precioPVP,cicero,precioReferencia,precioMenor,grupoHomogeneo,codigoGrupoHomogeneo,existe,existeMedicamentoFarmacia
+[Lcom.farmacloud.shared.model.abstracts.MedicamentoAbstracto;, true, true, true, true, [Lcom.farmacloud.shared.model.abstracts.MedicamentoAbstracto;/2260278120, 2260278120
+com.farmacloud.shared.model.abstracts.Negocio, true, false, true, false, com.farmacloud.shared.model.abstracts.Negocio/1413787068, 1413787068
+@ClientFields,com.farmacloud.shared.model.abstracts.Negocio,NIF,nombre,direccion,telefono,email,catalogo
+com.farmacloud.shared.model.abstracts.PedidoAbstracto, true, false, true, false, com.farmacloud.shared.model.abstracts.PedidoAbstracto/3137886916, 3137886916
+@ClientFields,com.farmacloud.shared.model.abstracts.PedidoAbstracto,idInterno,proveedorKey,idExterno,fecha,importe,estado
+com.farmacloud.shared.model.simulacion.MedicamentoPedidoSimulacion, true, true, true, true, com.farmacloud.shared.model.simulacion.MedicamentoPedidoSimulacion/1089002296, 1089002296
+@ClientFields,com.farmacloud.shared.model.simulacion.MedicamentoPedidoSimulacion,unidadesPedidas,unidadesRecibidas,pedidoSimulacion,listaUnidadMedicamentoSimulacion
+[Lcom.farmacloud.shared.model.simulacion.MedicamentoPedidoSimulacion;, true, true, true, true, [Lcom.farmacloud.shared.model.simulacion.MedicamentoPedidoSimulacion;/524492690, 524492690
+com.farmacloud.shared.model.simulacion.PedidoSimulacion, true, true, true, true, com.farmacloud.shared.model.simulacion.PedidoSimulacion/2467056119, 2467056119
+@ClientFields,com.farmacloud.shared.model.simulacion.PedidoSimulacion,simulacionKey,fehaLlegada,listaMedicametoPedidoSimulacion
+com.farmacloud.shared.model.simulacion.UnidadMedicamentoSimulacion, true, true, true, true, com.farmacloud.shared.model.simulacion.UnidadMedicamentoSimulacion/3282216468, 3282216468
+@ClientFields,com.farmacloud.shared.model.simulacion.UnidadMedicamentoSimulacion,parentEncodedKey,medicamentoPedidoSimulacion,simulacionKey,ventaSimulacionParentKey,fechaCreacion
+[Lcom.farmacloud.shared.model.simulacion.UnidadMedicamentoSimulacion;, true, true, true, true, [Lcom.farmacloud.shared.model.simulacion.UnidadMedicamentoSimulacion;/1422981350, 1422981350
+com.farmacloud.shared.model.ver.UnidadMedicamentoPadre, true, false, true, false, com.farmacloud.shared.model.ver.UnidadMedicamentoPadre/2933003962, 2933003962
+com.google.gwt.i18n.shared.impl.DateRecord, true, true, true, true, com.google.gwt.i18n.shared.impl.DateRecord/3375188634, 3375188634
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true, true, true, true, com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException/3936916533, 3936916533
+com.google.gwt.user.client.rpc.RpcTokenException, true, true, false, false, com.google.gwt.user.client.rpc.RpcTokenException/2345075298, 2345075298
+com.google.gwt.user.client.rpc.XsrfToken, false, false, true, true, com.google.gwt.user.client.rpc.XsrfToken/4254043109, 4254043109
+java.lang.Exception, true, false, true, false, java.lang.Exception/1920171873, 1920171873
+java.lang.RuntimeException, true, false, true, false, java.lang.RuntimeException/515124647, 515124647
+java.lang.String, true, true, true, true, java.lang.String/2004016611, 2004016611
+java.lang.Throwable, true, false, true, false, java.lang.Throwable/2953622131, 2953622131
+java.sql.Date, true, true, true, true, java.sql.Date/730999118, 730999118
+java.sql.Time, true, true, true, true, java.sql.Time/1816797103, 1816797103
+java.sql.Timestamp, true, true, true, true, java.sql.Timestamp/3040052672, 3040052672
+java.util.ArrayList, true, true, true, true, java.util.ArrayList/4159755760, 4159755760
+java.util.Arrays$ArrayList, true, true, true, true, java.util.Arrays$ArrayList/2507071751, 2507071751
+java.util.Collections$EmptyList, true, true, true, true, java.util.Collections$EmptyList/4157118744, 4157118744
+java.util.Collections$SingletonList, true, true, true, true, java.util.Collections$SingletonList/1586180994, 1586180994
+java.util.Date, true, true, true, true, java.util.Date/3385151746, 3385151746
+java.util.LinkedList, true, true, true, true, java.util.LinkedList/3953877921, 3953877921
+java.util.Stack, true, true, true, true, java.util.Stack/1346942793, 1346942793
+java.util.Vector, true, true, true, true, java.util.Vector/3057315478, 3057315478

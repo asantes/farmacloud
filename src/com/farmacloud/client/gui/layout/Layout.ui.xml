@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+	
+	<ui:style src="Layout.css"> 
+	</ui:style>
+	
+	 <b:Container fluid="true">
+			<b:Navbar b:id="menu" position="DEFAULT" type="INVERSE" ui:field="menu"></b:Navbar>
+			<b:Row>
+		        	<b:Column size="XS_0" ui:field="asideContent"></b:Column>
+		        	<b:Column size="XS_12" ui:field="mainContent"></b:Column>
+		   </b:Row> 
+	 </b:Container>
+	
+</ui:UiBinder> 

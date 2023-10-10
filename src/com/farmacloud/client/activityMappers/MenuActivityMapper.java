@@ -1,0 +1,83 @@
+package com.farmacloud.client.activityMappers;
+
+import com.farmacloud.client.ClientFactory;
+import com.farmacloud.client.places.EscribirNoticiaPlace;
+import com.farmacloud.client.places.HomePlace;
+import com.farmacloud.client.places.MedicamentosAñadirPlace;
+import com.farmacloud.client.places.MedicamentosMenuPlace;
+import com.farmacloud.client.places.MedicamentosPlace;
+import com.farmacloud.client.places.PedidosMenuPlace;
+import com.farmacloud.client.places.PedidosNuevoPlace;
+import com.farmacloud.client.places.PharmaHomePlace;
+import com.farmacloud.client.places.AñadirProveedor;
+import com.farmacloud.client.places.ProveedoresPlace;
+import com.farmacloud.client.places.RecepcionPlace;
+import com.farmacloud.client.places.RegistroPharmaPlace;
+import com.farmacloud.client.places.RegistroPlace;
+import com.farmacloud.client.places.SimulacionRunningPlace;
+import com.farmacloud.client.places.SimularPlace;
+import com.farmacloud.client.places.VentaPlace;
+import com.farmacloud.client.places.VerProveedoresPlace;
+import com.farmacloud.client.presenter.anonymousUser.MenuPresenter;
+import com.farmacloud.client.presenter.pharmaUsers.MenuPharmaPresenter;
+import com.google.gwt.activity.shared.Activity;
+import com.google.gwt.activity.shared.ActivityMapper;
+import com.google.gwt.place.shared.Place;
+
+public class MenuActivityMapper implements ActivityMapper{
+
+		private ClientFactory clientFactory;
+		private MenuPresenter menuPresenter;
+		private MenuPharmaPresenter menuPharmaPresenter;
+		
+		public MenuActivityMapper(ClientFactory clientFactory) {
+			super();
+			this.clientFactory = clientFactory;
+		}
+
+		@Override
+		public Activity getActivity(Place place) {
+			 
+			if(place instanceof HomePlace || place instanceof RegistroPlace)
+			{
+				if(menuPresenter!=null)
+					return menuPresenter;
+				else {
+					menuPresenter = new MenuPresenter(clientFactory);
+					return menuPresenter;
+				}
+			}
+			
+			else if(place instanceof PharmaHomePlace || 
+					place instanceof RecepcionPlace ||
+					place instanceof ProveedoresPlace ||
+					place instanceof AñadirProveedor ||
+					place instanceof PedidosMenuPlace ||
+					place instanceof PedidosNuevoPlace ||
+					place instanceof MedicamentosMenuPlace ||
+					place instanceof MedicamentosAñadirPlace ||
+					place instanceof MedicamentosPlace || 
+					place instanceof RecepcionPlace || 
+					place instanceof MedicamentosAñadirPlace ||
+					place instanceof VentaPlace ||
+					place instanceof RegistroPlace ||
+					place instanceof RegistroPharmaPlace ||
+					place instanceof SimularPlace ||
+					place instanceof SimulacionRunningPlace ||
+					place instanceof EscribirNoticiaPlace ||
+					place instanceof VerProveedoresPlace)
+				{
+				
+					if(menuPharmaPresenter!=null)
+					{
+						return menuPharmaPresenter;
+					}
+					else{
+						menuPharmaPresenter = new MenuPharmaPresenter(clientFactory);
+						return menuPharmaPresenter;
+					}
+				}
+			
+			return null;
+		}
+	}

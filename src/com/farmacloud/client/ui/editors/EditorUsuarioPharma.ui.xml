@@ -1,0 +1,51 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+	
+	<ui:style src="../style.css">
+
+		.firstGroup{
+			margin-top:2em;
+		}
+
+	</ui:style>
+	
+	
+	<g:HTMLPanel>
+	    
+	<b:Form  ui:field="form" type="HORIZONTAL">
+	  <b:FieldSet>
+	  <b:Legend>Registro</b:Legend>
+	  
+	    <b:FormGroup addStyleNames="{style.firstGroup}">
+	      <b:FormLabel addStyleNames="col-lg-2" for="usuario">Usuario</b:FormLabel>
+	      <g:FlowPanel addStyleNames="col-lg-10">
+	      	 <b:TextBox b:id="usuario" ui:field="usuario" width="50%" />
+	      	 <b:InlineHelpBlock iconType="EXCLAMATION_TRIANGLE" />
+	      </g:FlowPanel>
+	    </b:FormGroup>
+	    
+	    <b:FormGroup>
+	      <b:FormLabel addStyleNames="col-lg-2" for="contraseña">Contraseña</b:FormLabel>
+	      <g:FlowPanel addStyleNames="col-lg-10">
+	     	 <b:Input type="PASSWORD" ui:field="contraseña" b:id="contraseña" width="50%"/>
+	     	 <b:InlineHelpBlock iconType="EXCLAMATION_TRIANGLE" />
+	      </g:FlowPanel>
+	    </b:FormGroup>
+	    
+	   	<b:FormGroup>
+	      <b:FormLabel addStyleNames="col-lg-2" for="email">email</b:FormLabel>
+	      <g:FlowPanel addStyleNames="col-lg-10">
+	     	 <b:TextBox ui:field="email" b:id="email" width="50%" />
+	     	 <b:InlineHelpBlock iconType="EXCLAMATION_TRIANGLE" />
+	      </g:FlowPanel>
+	    </b:FormGroup>
+	    
+	  </b:FieldSet>
+	</b:Form>
+
+	</g:HTMLPanel>
+	
+</ui:UiBinder> 

@@ -1,0 +1,353 @@
+	/*
+ * Copyright 2006 Pavel Jbanov.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+.Editor {
+}
+
+.Editor-IFrame {
+	border: 1px solid #888;
+}
+
+.Editor-Toolbar {
+	border-top: 1px solid #EEE;
+	border-left: 1px solid #EEE;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+	background-color: #EFEFDE;
+	vertical-align: middle;
+	padding: 0px 5px 0px 5px;
+}
+
+.Editor-Toolbar-Select {
+	font-size: 12px;
+	margin: 4px;
+}
+
+.Editor-DialogBox {
+	sborder: 8px solid #C3D9FF;
+	border: 1px solid #555;
+	background-color: white;
+	font-size: 12px;
+	-moz-border-radius: 5px;
+}
+
+.Editor-DialogBox td,.Editor-DialogBox div {
+	font-size: 12px;
+	vertical-align: bottom;
+}
+
+.Editor-DialogBox-Content {
+	padding: 8px;
+}
+
+.Editor-DialogBox .Caption {
+	font-family: tahoma, arial, sans-serif;
+	background-color: #003063;
+	color: white;
+	padding: 3px 5px 5px 10px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: default;
+}
+
+.Editor-Toolbar-Button {
+	width: 16px;
+	height: 16px;
+	background-image: url(toolbar_strip.gif);
+	border: 1px solid #EFEFDE;
+	margin: 2px;
+}
+
+.Editor-Toolbar-Button-hover {
+	background-color: #F3F0E0;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #DDD;
+}
+
+.Editor-Toolbar-Button-spacer {
+	background-position: 0px 752px;
+	background-color: #DDD;
+	height: 16px;
+	width: 1px;
+	border: 1px solid #D0D0D0;
+	margin: 0px 3px 0px 3px;
+}
+
+.Editor-Toolbar-Button-Source {
+	background-position: 0px 0px;
+}
+
+.Editor-Toolbar-Button-Something1 {
+	background-position: 0px 1040px;
+}
+
+.Editor-Toolbar-Button-Save {
+	background-position: 0px 1024px;
+}
+
+.Editor-Toolbar-Button-New {
+	background-position: 0px 1008px;
+}
+
+.Editor-Toolbar-Button-Preview {
+	background-position: 0px 992px;
+}
+
+.Editor-Toolbar-Button-New2 {
+	background-position: 0px 976px;
+}
+
+.Editor-Toolbar-Button-Cut {
+	background-position: 0px 960px;
+}
+
+.Editor-Toolbar-Button-Copy {
+	background-position: 0px 944px;
+}
+
+.Editor-Toolbar-Button-Paste {
+	background-position: 0px 928px;
+}
+
+.Editor-Toolbar-Button-PasteTextOnly {
+	background-position: 0px 912px;
+}
+
+.Editor-Toolbar-Button-PasteRichText {
+	background-position: 0px 896px;
+}
+
+.Editor-Toolbar-Button-Print {
+	background-position: 0px 880px;
+}
+
+.Editor-Toolbar-Button-SpellCheck {
+	background-position: 0px 864px;
+}
+
+.Editor-Toolbar-Button-Undo {
+	background-position: 0px 848px;
+}
+
+.Editor-Toolbar-Button-Redo {
+	background-position: 0px 832px;
+}
+
+.Editor-Toolbar-Button-Find {
+	background-position: 0px 816px;
+}
+
+.Editor-Toolbar-Button-Replace {
+	background-position: 0px 800px;
+}
+
+.Editor-Toolbar-Button-Something2 {
+	background-position: 0px 784px;
+}
+
+.Editor-Toolbar-Button-ClearFormat {
+	background-position: 0px 768px;
+}
+
+.Editor-Toolbar-Button-Bold {
+	background-position: 0px 752px;
+}
+
+.Editor-Toolbar-Button-Italic {
+	background-position: 0px 736px;
+}
+
+.Editor-Toolbar-Button-Underline {
+	background-position: 0px 720px;
+}
+
+.Editor-Toolbar-Button-StrikeThrough {
+	background-position: 0px 704px;
+}
+
+.Editor-Toolbar-Button-Subscript {
+	background-position: 0px 688px;
+}
+
+.Editor-Toolbar-Button-Superscript {
+	background-position: 0px 672px;
+}
+
+.Editor-Toolbar-Button-OL {
+	background-position: 0px 656px;
+}
+
+.Editor-Toolbar-Button-UL {
+	background-position: 0px 640px;
+}
+
+.Editor-Toolbar-Button-IndentLeft {
+	background-position: 0px 624px;
+}
+
+.Editor-Toolbar-Button-IndentRight {
+	background-position: 0px 608px;
+}
+
+.Editor-Toolbar-Button-AlignLeft {
+	background-position: 0px 592px;
+}
+
+.Editor-Toolbar-Button-AlignCenter {
+	background-position: 0px 576px;
+}
+
+.Editor-Toolbar-Button-AlignRight {
+	background-position: 0px 560px;
+}
+
+.Editor-Toolbar-Button-AlignJustify {
+	background-position: 0px 544px;
+}
+
+.Editor-Toolbar-Button-Link {
+	background-position: 0px 528px;
+}
+
+.Editor-Toolbar-Button-UnLink {
+	background-position: 0px 512px;
+}
+
+.Editor-Toolbar-Button-Anchore {
+	background-position: 0px 496px;
+}
+
+.Editor-Toolbar-Button-Image {
+	background-position: 0px 480px;
+}
+
+.Editor-Toolbar-Button-Flash {
+	background-position: 0px 464px;
+}
+
+.Editor-Toolbar-Button-Table {
+	background-position: 0px 448px;
+}
+
+.Editor-Toolbar-Button-HR {
+	background-position: 0px 432px;
+}
+
+.Editor-Toolbar-Button-Smile {
+	background-position: 0px 416px;
+}
+
+.Editor-Toolbar-Button-SpecialCharacter {
+	background-position: 0px 400px;
+}
+
+.Editor-Toolbar-Button-PageBreak {
+	background-position: 0px 384px;
+}
+
+.Editor-Toolbar-Button-Keyboard {
+	background-position: 0px 368px;
+}
+
+.Editor-Toolbar-Button-TextColor {
+	background-position: 0px 352px;
+}
+
+.Editor-Toolbar-Button-TextBackgroundColor {
+	background-position: 0px 336px;
+}
+
+.Editor-Toolbar-Button-Help {
+	background-position: 0px 320px;
+}
+
+.Editor-Toolbar-Button-Movie {
+	background-position: 0px 304px;
+}
+
+.Editor-Toolbar-Button-Checkbox {
+	background-position: 0px 288px;
+}
+
+.Editor-Toolbar-Button-Radio {
+	background-position: 0px 272px;
+}
+
+.Editor-Toolbar-Button-TextField {
+	background-position: 0px 256px;
+}
+
+.Editor-Toolbar-Button-TextArea {
+	background-position: 0px 240px;
+}
+
+.Editor-Toolbar-Button-ScrollBar {
+	background-position: 0px 224px;
+}
+
+.Editor-Toolbar-Button-Button {
+	background-position: 0px 208px;
+}
+
+.Editor-Toolbar-Button-ImageField {
+	background-position: 0px 192px;
+}
+
+.Editor-Toolbar-Button-TextLayer {
+	background-position: 0px 176px;
+}
+
+.Editor-Toolbar-Button-Table1 {
+	background-position: 0px 160px;
+}
+
+.Editor-Toolbar-Button-TableInsertRow {
+	background-position: 0px 144px;
+}
+
+.Editor-Toolbar-Button-TableDeleteRow {
+	background-position: 0px 128px;
+}
+
+.Editor-Toolbar-Button-Table2 {
+	background-position: 0px 112px;
+}
+
+.Editor-Toolbar-Button-Table3 {
+	background-position: 0px 96px;
+}
+
+.Editor-Toolbar-Button-Table4 {
+	background-position: 0px 80px;
+}
+
+.Editor-Toolbar-Button-Table5 {
+	background-position: 0px 64px;
+}
+
+.Editor-Toolbar-Button-Table6 {
+	background-position: 0px 48px;
+}
+
+.Editor-Toolbar-Button-Table7 {
+	background-position: 0px 32px;
+}
+
+.Editor-Toolbar-Button-FullScreen {
+	background-position: 0px 16px;
+}

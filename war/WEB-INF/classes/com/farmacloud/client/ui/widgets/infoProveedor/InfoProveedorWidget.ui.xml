@@ -1,0 +1,42 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			xmlns:g="urn:import:com.google.gwt.user.client.ui"
+			xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+	
+<ui:with type="java.lang.String" field="nif"></ui:with>
+<ui:with type="java.lang.String" field="name"></ui:with>
+<ui:with type="java.lang.String" field="direccion"></ui:with>
+<ui:with type="java.lang.String" field="telefono"></ui:with>
+<ui:with type="java.lang.String" field="email"></ui:with>
+
+	<ui:style>
+	
+	</ui:style>
+	
+	  <b:Panel>
+	  	<b:PanelHeader>
+	    	<b:Heading size="H4">
+	        <b:Anchor ui:field="anchor" dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapse" text="{name}"></b:Anchor>
+	      </b:Heading>
+	    </b:PanelHeader>
+	    <b:PanelCollapse b:id="collapse">
+	    	<b:PanelBody>
+				<b:Description>
+					<b:DescriptionTitle text="NIF"/>
+					<b:DescriptionData	text="{nif}"/>
+					<b:DescriptionTitle text="Nombre"/>
+					<b:DescriptionData	text="{name}"/>
+					<b:DescriptionTitle text="Direccion"/>
+					<b:DescriptionData	text="{direccion}"/>
+					<b:DescriptionTitle text="Telefono"/>
+					<b:DescriptionData	text="{telefono}"/>
+					<b:DescriptionTitle text="Email"/>
+					<b:DescriptionData	text="{email}"/>
+				</b:Description>  
+	     	<b:Button ui:field="editar">Editar</b:Button>
+	      </b:PanelBody>
+	    </b:PanelCollapse>
+	  </b:Panel>
+
+</ui:UiBinder> 

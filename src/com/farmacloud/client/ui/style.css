@@ -1,0 +1,19 @@
+	
+	.centerPanel{
+		width:50%;
+		margin:auto;
+	}
+	
+	.centerPanelAlign{
+		width:50%;
+		margin:auto;
+		text-align:center;
+	}
+		
+	.displayInline{
+		display: inline !important;
+	}
+	
+	.firstElement{
+		margin-top: 2em;
+	}

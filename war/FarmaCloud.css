@@ -1,0 +1,703 @@
+
+  /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*/
+ /*	 suggestion's dropdown-menu more appealing     */
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*/
+	.dropdown-menu .item {
+	  padding: 5px;
+	}
+	
+	.dropdown-menu .item-selected {
+	  background-color: #eee;
+	}
+	
+	
+ /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+/*	  center grid's header	 */
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+	.gwtb3-d{
+		text-align: center !important;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+  /*=*=*=*=*=*=*=*=*/
+ /*	  widgets	  */
+/*=*=*=*=*=*=*=*=*/
+
+	.focusedPopup{
+		color: #f2f2f2;
+		border: none;
+	}
+
+
+
+  /*=*=*=*=*=*=*=*=*/
+ /*	  M E N U	  */
+/*=*=*=*=*=*=*=*=*/
+	
+		
+	
+		/* Secciones del menu. Home, Noticias, Registro... */
+		.seccionMenu{
+			background:#2f872f;
+			height: 100%;
+			margin-left: 2em;
+			margin-right: 2em;
+			transition: background 0.4s ease, color 0.4s ease;
+		}
+		
+		.seccionMenu-isOpened{
+			background: #4d4d4d;
+			height: 100%;
+			margin-left: 2em;
+			margin-right: 2em;
+			transition: background 0.4s, color 0.4s ease;
+			color: white;
+		}
+		
+		.seccionMenu-isClosed{
+			background: #2f872f;
+		}
+		
+		.seccionMenu:HOVER{
+			background:#4d4d4d;
+			color: white;
+		}
+		
+		.seccionMenu:ACTIVE{
+			background: black;
+			color: white;
+		}
+	
+	
+	 	/* Labels con los nombres de las secciones */
+		.labels-in-menu{
+			padding: 0.5em;
+			font-size: 2em;
+			cursor: pointer;
+		}
+	
+		.vPanel-in-menu .labels-in-menu{
+			transition: background 0.4s ease;
+			background: #2f872f;
+			font-size: 1.5em;
+			color: #d9d9d9;
+		}
+		
+		.vPanel-in-menu .labels-in-menu:HOVER{
+			background: #4d4d4d;
+			color: white;
+		}
+		
+		.vPanel-in-menu .labels-in-menu[tipo="master"]{
+			margin-bottom: 1.25em;
+		}
+	
+	
+	
+	
+		.icon-home{
+			font-size: 1.4em;
+		}
+	
+	
+	
+	
+	
+	
+	
+	#ola {
+		width: 1em;
+		height: 0.1em;
+		color:red;
+	}
+	
+	.popup-sin{
+		padding: 0em;
+		border: 0em;
+		margin: 0em;
+	}
+	#loler {
+		color:red;
+	}
+
+	.pop{
+		border:none;
+		margin:none;
+		padding:none;
+		background: grey;
+		color: black;
+	}
+	
+ 	.tejon{
+ 		color:red;
+ 		font-size:4em;
+ 	
+
+ 	}
+	 
+	 .popup-menuAside{
+		  position:absolute;
+		  padding: 0em !important;
+		  border: 0em !important;
+		  margin: 0em !important;
+		  border-radius: 25px;
+		  background-color: red;
+		  background-color: 4d4d4d !important;
+		  opacity: 0.65 !important;
+	 	  filter: alpha(opacity=20) !important;	
+	 }
+	 
+	 
+		.popup-menuAside .icon{
+			border-radius: 1em;
+			padding-top: 1.2em;
+			padding-right: 1.2em;
+			padding-bottom: 1em;
+			padding-left: 1em;
+		 }
+	
+/*=*=*=*=*=*=*=*=*=*=*/
+/*		font 		 */
+/*=*=*=*=*=*=*=*=*=*=*/
+	
+	*{
+		//font-family: Quattrocento, serif;
+	 }
+
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/*  	layout       */
+/*=*=*=*=*=*=*=*=*=*=*/
+
+	.leon{
+		background-color: purple;
+	}
+
+	.layout{
+		background-color: #cadef5;
+		margin:auto;
+		min-width:70%;
+		max-width:100%;
+		height: 100%;
+	}
+	
+		.headerPanel{
+			background:#ffc0cb;
+		}	
+		
+		.menuPanel{
+			background:#e8f8ff;
+		}
+		
+		.mainContentPanel{
+			overflow:auto;
+			background:#eee9e9;
+		}
+		
+		.asideMenuPanel{
+			background:#d69393;
+			transition: width 5s;
+		}
+		
+		.asidePanel{
+			background:#fff4eb;
+		}
+	
+
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/* aside-menu-pharma */
+/*=*=*=*=*=*=*=*=*=*=*/
+	
+	.aside-menu-pharma{
+		margin-top: 2em;
+		margin-left: 15%;
+	}
+	
+		.aside-menu-pharma .bloqueMenu{
+			margin-bottom: 3em;
+		}
+	
+		.aside-menu-pharma .bloqueMenu .menuTitle{
+			font-size: 2.25em;
+			cursor:pointer;
+			color:#4d4d4d;
+    		transition: color 0.5s;
+		}
+		
+		.aside-menu-pharma .bloqueMenu .menuTitle:HOVER{
+			color: black;
+		}
+		
+		.aside-menu-pharma .bloqueMenu .menuTitle-selected{
+			color: black;
+		}
+		
+		.aside-menu-pharma .gwt-Hyperlink a{
+			text-decoration: none;
+			font-size: 1.5em;
+			background-color: none;
+			color: #4d4d4d;
+		}
+		
+		.aside-menu-pharma .gwt-Hyperlink a:LINK{
+			transition: background 0.25s;
+		}
+		
+		.aside-menu-pharma .gwt-Hyperlink a:HOVER{
+			background-color: #bfbfbf;
+			font-weight: normal;
+			color: black;
+		
+		}
+
+
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/* gwt-RichTextArea  */
+/*=*=*=*=*=*=*=*=*=*=*/
+
+	.gwt-RichTextArea {
+	}
+	
+	.hasRichTextToolbar {
+	  border: 0px;
+	}
+	
+	.gwt-RichTextToolbar .gwt-Image{
+		padding:0.4em;
+	}
+	.gwt-RichTextToolbar {
+	  border-bottom: 1px solid #BBBBBB;
+	  padding: 3px;
+	  margin: 0px;
+	  width:100%;
+	}
+	
+	.gwt-RichTextToolbar .gwt-PushButton-up {
+	  padding: 0px 1px 0px 0px;
+	  margin-right: 4px;
+	  margin-bottom: 4px;
+	  border-width: 1px;
+	}
+	
+	.gwt-RichTextToolbar .gwt-PushButton-up-hovering {
+	  margin-right: 4px;
+	  margin-bottom: 4px;
+	  padding: 0px 1px 0px 0px;
+	  border-width: 1px;
+	}
+	
+	.gwt-RichTextToolbar .gwt-PushButton-down {
+	  margin-right: 4px;
+	  margin-bottom: 4px;
+	  padding: 0px 0px 0px 1px;
+	  border-width: 1px;
+	}
+	
+	.gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+	  margin-right: 4px;
+	  margin-bottom: 4px;
+	  padding: 0px 0px 0px 1px;
+	  border-width: 1px;
+	}
+	
+	.gwt-RichTextToolbar .gwt-ToggleButton-up {
+	  margin-right: 4px;
+	  margin-bottom: 4px;
+	  padding: 0px 1px 0px 0px;
+	  border:1px solid #bbb;
+	  border-bottom: 1px solid #a0a0a0;
+	}
+	
+	.gwt-RichTextToolbar .gwt-ToggleButton-up-hovering {
+	  margin-right: 4px;
+	  margin-bottom: 4px;
+	  padding: 0px 1px 0px 0px;
+	  border-width: 1px;
+	}
+	
+	.gwt-RichTextToolbar .gwt-ToggleButton-down {
+	  margin-right: 4px;
+	  margin-bottom: 4px;
+	  padding: 0px 0px 0px 1px;
+	  border-width: 1px;
+	}
+	
+	.gwt-RichTextToolbar .gwt-ToggleButton-down-hovering {
+	  margin-right: 4px;
+	  margin-bottom: 4px;
+	  padding: 0px 0px 0px 1px;
+	  border-width: 1px;
+	}
+	
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/* escribir-noticia  */
+/*=*=*=*=*=*=*=*=*=*=*/
+
+ 	.escribir-noticia{
+ 		position: relative;
+ 		top: 3.5em;
+ 		width: 85%;
+		padding: 0em;
+		margin: auto;
+ 	}
+ 	
+		.escribir-noticia .gwt-RichTextArea{
+			  border: 1px solid #BBBBBB;
+			  border-spacing: 0em;
+			  background-color: white;
+			  padding: 0em;	
+			  margin: 0em;
+			  min-width: 100%;
+			  max-width: 100%;
+	   		  height: 45em;
+		}
+		
+		.escribir-noticia .gwt-TextBox{
+			width: 40em;
+			margin-left: 2em;
+		}
+		.escribir-noticia .gwt-Button{
+			margin: 2px 15px 2px 0px;
+		}
+		
+		
+/*=*=*=*=*=*=*=*=*=*=*/
+/*  preview-noticia  */
+/*=*=*=*=*=*=*=*=*=*=*/
+
+	.preview-noticia-glass {
+	  background-color: #000000!important;
+	  opacity: 0.65 !important;
+	  filter: alpha(opacity=20) !important;
+	}
+
+	.preview-noticia{
+	  position:absolute;
+	  width: 50%;
+	  height: 65em;
+	  padding: 0em !important;
+	  border: 0em !important;
+	  margin: 0em !important;
+	  border-radius: 25px;
+	  background-color: red;
+	}
+
+		.preview-noticia .popupContent{
+			overflow:auto! important;
+			width: 100%;
+	 		height: 100%;
+			border-radius:25px;
+		    background-color: green;
+		}
+		
+				.preview-noticia .popupContent .vPanel-preview{
+					width: 100%;
+					height: 100%;
+					background-color: pink;
+				}
+			
+				.preview-noticia .popupContent .cerrarPreview{
+				  background-image: initial !important;
+				  background-color: none;		
+				  position:relative;  
+				  top: 1.25em;
+				  left: 52.5em;
+				  width: 3em;
+				  height: 3em;
+				  color: #bfbfbf;
+				  padding: 0 !important;
+				  margin-bottom: 2em !important;
+				  border: 2px solid #bfbfbf;
+				  border-radius: 2em;
+		    	  transition: color 0.5s;
+		    	  transition: border 0.5s;
+				}
+				
+				.preview-noticia .popupContent .cerrarPreview:HOVER{
+				  background-image:initial !important;
+				  color:#000000;
+				  border: 2px solid black;
+				}
+
+
+  /*=*=*=*=*=*=*=*=*=*=*=*/
+ /*  mostrar-noticias   */
+/*=*=*=*=*=*=*=*=*=*=*=*/
+
+	#panelNoticias{
+		margin: 5em auto 5em auto;
+		width: 50%;
+		border: none;
+		box-shadow: none;
+	}
+	
+  /*=*=*=*=*=*=*=*=*=*=*=*/
+ /* 	 paginador      */
+/*=*=*=*=*=*=*=*=*=*=*=*/
+
+	.paginador{
+		margin-right: auto;
+		margin-left: auto;
+    }
+
+		.indicePaginador{
+			display: inline;
+			cursor: default;
+		}
+		
+		.indicePaginador a{
+			display: block;
+			color: white !important;
+			background-color: #008000;
+			text-decoration: none !important;
+			font-size: 1.5em;
+			width: 2em;
+			border: none;
+			border-radius: 0.2em;
+			border-bottom:0.2em solid #005900;
+			margin-left: 0.25em;
+			margin-right: 0.25em;
+			padding: 0.3em;
+			transition: background-color 0.5s ease, border-bottom 0.5s;
+		}
+		
+		.indicePaginador a:HOVER{
+			color: white;
+			border-bottom: 0.2em solid #000000;
+			background-color: #333333;
+		}
+		
+		.indicePaginador-indiceActual{
+		   pointer-events: none;
+		   cursor: default;
+		}
+		
+		.indicePaginador-indiceActual a{	   
+		   background: none;
+		   border: none;
+		   color: black !important;
+		   padding-left: 0em;
+		   padding-right: 0em;
+		   margin: -0.25em;
+		}
+
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/*  noticia widget  */
+/*=*=*=*=*=*=*=*=*=*=*/
+
+	.noticia-vPanel-individual h2, h5{
+	    padding: 0px;
+	    margin: 0px;
+	}
+	
+	.noticia-vPanel-individual{
+		padding: 3.5em;
+		position: relative;
+		margin-bottom: 5em;
+		background-color: #e6e6fa;
+		width: 100%;
+	}
+	
+	.noticia-vPanel-individual[tipo="preview"]{
+		margin-bottom: 0em;
+	}
+
+	.noticia-vPanel-individual .titular-noticia a:link{
+		font-size: 2.2em;
+		margin-bottom: 0em;
+	}
+	
+	.noticia-vPanel-individual .palabrilla{
+		font-size: 1.5em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.noticia-vPanel-individual .gridAutorPalabra{
+		margin: 0em;
+	}
+	
+	.noticia-vPanel-individual .autor-noticia a:link{
+		display: block;
+		font-size: 1.5em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+		
+	.noticia-vPanel-individual	.fecha-noticia{
+		font-size: 1.2em;
+		padding-left: 0.2em;
+		margin-bottom: 0em;
+	}
+		
+	.noticia-vPanel-individual .cuerpo-noticia{
+		margin-top: 1.25em;
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+utton::-moz-focus-inner {
+  border: 0;
+}
+
+.mob .gwt-Button{
+  background: no-repeat;
+  border: none;
+}
+/*			H O M E - V I E W			H O M E - V I E W   			H O M E - V I E W			*/
+.menuView{
+	margin-top: 25px;
+    margin-bottom: 25px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.menuView .gwt-Button{
+	//margin-top: 10px;
+    //margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.loginView{
+    float:right;
+   	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+	.loginView .gwt-Button{
+		margin-top: 5px;
+	    margin-bottom: 10px;
+	    margin-right: 10px;
+	    margin-left: 10px;
+	}
+	.loginView .gwt-Label{
+		position:relative;
+		bottom:-7px;
+	}
+	.loginView .gwt-CheckBox {  
+		position:relative;
+		bottom:-10px;
+	}
+/*			H O M E - V I E W			H O M E - V I E W   			H O M E - V I E W			*/
+
+	
+.registerView{
+	margin-top:200px;
+	margin-bottom:200px;
+ 	margin-left: auto;
+    margin-right: auto;
+}
+
+	.registerView .gwt-Button{
+		margin-top: 10px;
+	    margin-bottom: 1px;
+	    margin-right: 10px;
+	    margin-left: 10px;
+	}
+
+/*			 L O G G E D - H O M E  V I E W			L O G G E D - H O M E  V I E W			L O G G E D - H O M E  V I E W			*/
+.loggedHeader{
+	float:right;
+   	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    left: -60px;
+}
+	.loggedHeader .gwt-Button{
+	    margin-right: 20px;
+	    margin-left: 20px;
+	 }
+/*			 L O G G E D - H O M E  V I E W			L O G G E D - H O M E  V I E W			L O G G E D - H O M E  V I E W			*/
+
+
+
+/*			P H A R M A - H O M E  V I E W			P H A R M A - H O M E  V I E W			P H A R M A - H O M E  V I E W			*/
+.menuPharma{
+	margin-top: 25px;
+    margin-bottom: 25px;
+	margin-left: auto;
+    margin-right: auto;
+}
+	
+.menuPharma .gwt-Button{
+	margin-left: 10px;
+    margin-right: 10px;
+    z-index:3000;
+}
+
+.infoMedicamento{
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:200px;
+}
+
+.proveedores{
+	margin-top:35em;
+	margin-right:auto;
+	margin-left:auto;
+}
+	.proveedoresAñadir{
+		margin-top: 30em;
+  	  	margin-bottom: 30em;
+		margin-right:30em;
+		margin-left:30em;
+	}
+/*			P H A R M A - H O M E  V I E W			P H A R M A - H O M E  V I E W			P H A R M A - H O M E  V I E W			*/
+
+
+/*			P H A R M A - P E D I D O S  V I E W	P H A R M A - P E D I D O S  V I E W	P H A R M A - P E D I D O S  V I E W	*/
+.pedidosAñadir{
+	
+}
+	.pedidosAñadir .scrollPanel{
+		margin-top: 30px;
+   		margin-bottom: 30px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+	
+	.pedidosAñadir .gwt-Button{
+		margin-top: 10px;
+	    margin-bottom: 10px;
+	    margin-right: 35em;
+	    margin-left: 35em;
+	}
+/*			P H A R M A - P E D I D O S  V I E W	P H A R M A - P E D I D O S  V I E W	P H A R M A - P E D I D O S  V I E W	*/
+
+

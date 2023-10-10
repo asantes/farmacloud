@@ -1,0 +1,2 @@
+serviceClass: com.farmacloud.client.services.ServicioGestionVenta
+path: F2915B3356E140838BB29F6B67BEEF88.gwt.rpc
